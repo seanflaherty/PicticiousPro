@@ -14,9 +14,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
-	font-weight: 300;
-	line-height: 1.1;
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
 }
 
 a {
@@ -24,15 +24,15 @@ a {
 }
 
 .button {
-	background: #000;
+    background: #000;
     border-radius: 3px;
-	background-color: #ffffff;
-	display: block;
+    background-color: #ffffff;
+    display: block;
     color: #E77E04;
     font-size: 20px;
-	padding: 10px 30px;
+    padding: 10px 30px;
     text-align: center;
-	text-transform: uppercase;
+    text-transform: uppercase;
     width: 100%;
 }
 
@@ -62,6 +62,7 @@ a {
     display: inline-block;
     height: 60px;
     margin: 0 15px 0 0;
+    padding-top: 10px;
     vertical-align: middle;
     width:60px;
 }
@@ -70,6 +71,9 @@ a {
     background-color: White;
 }
 
+.logo_wrapper {
+    overflow: hidden;
+}
 
 
 /* Intro */
@@ -83,18 +87,18 @@ a {
 }
 
 .intro {
-	background: #e77e04 url(../images/intro_bg.jpg) no-repeat center top;
-	color: #fff;
+    background: #e77e04 url(../images/intro_bg.jpg) no-repeat center top;
+    color: #fff;
 }
 
 .intro_button {
-	background: #fff;
-	color: #e77e04;
-	font-size: 20px;
+    background: #fff;
+    color: #e77e04;
+    font-size: 20px;
 }
 
 .intro_image {
-	width: 100%;
+    width: 100%;
 }
 
 .intro_row {
@@ -144,7 +148,7 @@ a {
     content: '';
     display: block;
     height: 65px;
-    margin: 0 15px 0 0;
+    margin: 0 auto;
     text-align: center;
     vertical-align: middle;
     width:75px;
@@ -156,7 +160,7 @@ a {
     content: '';
     display: block;
     height: 65px;
-    margin: 0 15px 0 0;
+    margin: 0 auto;
     text-align: center;
     vertical-align: middle;
     width:75px;
@@ -168,9 +172,7 @@ a {
     content: '';
     display: block;
     height: 65px;
-    /* margin: 0 15px 0 0; */
-    margin-left: auto;
-    margin-right: auto
+    margin: 0 auto;
     vertical-align: middle;
     width:75px;
 }
@@ -186,17 +188,19 @@ a {
 /* Gallery */
 .gallery {
     background-color: Gray;
+    padding: 95px 0px;
 }
 
-.gallery_image {
+.gallery-photo {
     border:10px;
     float: left;
     position: relative;
     width: 100%;
 }
 
-.gallery_image img {
+.gallery-photo img {
     float: left;
+    margin: 5px 0;
     position: relative;
     width: 100%;
 }
@@ -228,25 +232,43 @@ a {
     bacground-color: White;
 }
 
-.download_button {
-	background: #000 url(../images/icon_sprite.png) no-repeat;
-	color: #E77E04;
+.download-button {
+    background: #000 no-repeat;
+    border-radius: 5px;
+    color: #E77E04;
+    content: '';
+    display: block;
+    font-size: 16px;
     height: 55px;
-	margin: 0 0 10px;
-	text-indent: 200%;
-	white-space: nowrap;
+    line-height: 1.5;
+    list-style: none;
+    margin: 0 15 10px;
+    overflow: hidden;
+    text-align: center;
+    text-indent: 200%;
+    white-space: nowrap;
+    width: 130px;
+}
+.download-button-container {
+    display: block;
+}
+.download-button-list {
+    text-align: center;
 }
 
-.download_button.appstore {
-	background-position: center -200px;
+.download-button.appstore {
+    background: url(../images/icon_sprite.png) no-repeat -80px 0;
+    background-position: center -200px;
 }
 
-.download_button.google {
-	background-position: center -260px;
+.download-button.google {
+    background: url(../images/icon_sprite.png) no-repeat -80px 0;
+    background-position: center -260px;
 }
 
-.download_button.amazon {
-	background-position: center -320px;
+.download-button.amazon {
+    background: url(../images/icon_sprite.png) no-repeat -80px 0;
+    background-position: center -320px;
 }
 
 .download-text {
@@ -266,9 +288,12 @@ a {
 
 /* Footer */
 .footer_list_item {
+    float: right;
     font-size: 16px;
     line-height: 1.5;
     list-style: none;
+    overflow: hidden;
+    text-indent: 100%;
     white-space:nowrap;
 }
 
@@ -285,7 +310,7 @@ a {
 .footer_list_item.google {
     background: url(../images/icon_sprite.png) no-repeat -160px 0;
     content: '';
-    display:inline-block;
+    display: inline-block;
     height: 60px;
     margin: 0 15px 0 0;
     vertical-align: middle;
@@ -301,13 +326,23 @@ a {
     vertical-align: middle;
     width:40px;
 }
+footer_links {
+    display: inline;
+
+}
 
 .copyright {
     color: #777777;
+    display: inline;
 }
 
 .footer_support {
     color: #2B3F4C;
+    display: inline;
+}
+.footer_privacy {
+    color: #2B3F4C;
+    display: inline;
 }
 
 /* Mobile Only */
@@ -318,38 +353,48 @@ a {
 /* Tablet */
 @media screen and (min-width: 740px) {
 
-	.button {
-		display: inline-block;
-	}
+    .button {
+        display: inline-block;
+    }
 
+    .download-button-container {
+        display: inline-block;
+    }
+    .intro_row {
+        padding: 50px 0 75px;
+        position: relative;
+    }
 
-	.intro_row {
-		padding: 50px 0 75px;
-		position: relative;
-	}
+    .intro_row:before {
+        bottom: 0;
+        background: url(../images/intro_phone.png) no-repeat center top;
+        content: '';
+        display: block;
+        height: 430px;
+        position: absolute;
+        right: -100px;
+        width: 325px;
+    }
 
-	.intro_row:before {
-		bottom: 0;
-		background: url(../images/intro_phone.png) no-repeat center top;
-		content: '';
-		display: block;
-		height: 430px;
-		position: absolute;
-		right: -100px;
-		width: 325px;
-	}
-
-	.intro_title {
-		font-size: 70px;
-	}
+    .intro_title {
+        font-size: 70px;
+    }
 }
 
 /* Desktop */
 @media screen and (min-width: 980px) {
-
+    .button {
+        width: auto;
+    }
+    .intro_row:before {
+        right: 50px;
+    }
 }
 
 /* Max */
 @media screen and (min-width: 1220px) {
+    .intro_row:before {
+    right: 50px;
+    }
 
 }

@@ -1,5 +1,5 @@
 <section class="intro row">
-    <div class="row intro_row">
+    <div class="intro_row row">
       <div class="mobile-full tablet-4 desktop-6 max-5 max-push-1">
         <h2 class="intro-title">Nice Shot</h2>
         <p class="intro_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
@@ -28,61 +28,51 @@
   </section>
 
   <section class="gallery row">
-    <div class="desktop-4">
+    <div class="tablet-4 desktop-4">
       <h3 class="gallery-title">Capture Life</h3>
       <p class="gallery-text">Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
       </p>
     </div>
-    <div><figure class="gallery-photo mobile-half tablet-1 desktop-2">
-		    <a href= "images/photos/01.jpg" class ="lightbox">
-                <img src="images/photos/thumb_01.jpg" alt="">
-            </a>
-    </figure></div>
-    <div><figure class="gallery-photo mobile-half tablet-1 desktop-2">
-        <a href= "images/photos/02.jpg" class ="lightbox">
+    <a href= "images/photos/01.jpg" class ="gallery-photo mobile-half tablet-1 tablet_margin desktop-2 lightbox wow flipInX" data-gallery="gallery" title="Photo 1">
+            <img src="images/photos/thumb_01.jpg" alt="">
+        </a>
+        <a href= "images/photos/02.jpg" class ="gallery-photo mobile-half tablet-1 tablet_margin desktop-2 lightbox wow flipInX">
             <img src="images/photos/thumb_02.jpg" alt="">
         </a>
-    </figure></div>
-    <div><figure class="gallery-photo mobile-half tablet-1 desktop-2">
-        <a href= "images/photos/03.jpg" class ="lightbox">
+        <a href= "images/photos/03.jpg" class ="gallery-photo mobile-half tablet-1 desktop-2 lightbox wow flipInX">
             <img src="images/photos/thumb_03.jpg" alt="">
         </a>
-    </figure></div>
-    <div><figure class="gallery-photo mobile-half tablet-1 desktop-2">
-        <a href= "images/photos/04.jpg" class ="lightbox">
+        <a href= "images/photos/04.jpg" class ="gallery-photo mobile-half tablet-1 desktop-2 lightbox wow flipInX">
             <img src="images/photos/thumb_04.jpg" alt="">
         </a>
-    </figure></div>
-    <div><figure class="gallery-photo mobile-half tablet-1 desktop-2">
-        <a href= "images/photos/05.jpg" class ="lightbox">
+        <a href= "images/photos/05.jpg" class ="gallery-photo mobile-half tablet-1 desktop-2 lightbox wow flipInX">
             <img src="images/photos/thumb_05.jpg" alt="">
         </a>
-    </figure></div>
-    <div><figure class="gallery-photo mobile-half tablet-1 desktop-2">
-        <a href= "images/photos/06.jpg" class ="lightbox">
+        <a href= "images/photos/06.jpg" class ="gallery-photo mobile-half tablet-1 desktop-2 lightbox wow flipInX">
             <img src="images/photos/thumb_06.jpg" alt="">
         </a>
-    </figure></div>
-    <div><figure class="gallery-photo mobile-half tablet-1 desktop-2">
-        <a href= "images/photos/07.jpg" class ="lightbox">
+        <a href= "images/photos/07.jpg" class ="gallery-photo mobile-half tablet-1 desktop-2 lightbox wow flipInX">
             <img src="images/photos/thumb_07.jpg" alt="">
         </a>
-    </figure></div>
-    <div><figure class="gallery-photo mobile-half tablet-1 desktop-2">
-        <a href= "images/photos/08.jpg" class ="lightbox">
+        <a href= "images/photos/08.jpg" class ="gallery-photo mobile-half tablet-1 desktop-2 lightbox wow flipInX">
             <img src="images/photos/thumb_08.jpg" alt="">
         </a>
-    </figure></div>
   </section>
 
   <section class="download row">
     <div>
-      <h4 class="download-title">Download Now</h4>
-      <p class="download-text">Nullam id dolor id nibh ultricies vehicula deposit quid pro quo hic escorol.</p>
-      <ul>
-        <li class="apps_list_item"></li>
-        <li class="apps_list_item"></li>
-        <li class="apps_list_item"></li>
-      </ul>
+        <h4 class="download-title">Download Now</h4>
+        <p class="download-text">Nullam id dolor id nibh ultricies vehicula deposit quid pro quo hic escorol.</p>
+        <ul class="download-button-list">
+            <li class="download-button-container apps_list_item">
+                <a class="download-button appstore" href="#">App Store</a>
+            </li>
+            <li class="download-button-container apps_list_item">
+                <a class="download-button google" href="#">Google Play</a>
+            </li>
+            <li class="download-button-container apps_list_item">
+                <a class="download-button amazon" href="#">Amazon</a>
+            </li>
+        </ul>
     </div>
-  </section>
+    </section>
